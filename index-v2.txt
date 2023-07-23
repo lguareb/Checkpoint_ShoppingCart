@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <main>
+        <div class="shopping-cart">
+            <!-- Title -->
+            <div class="title">Items in your bag</div>
+
+            <!-- Product #1-->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"><i class="fa fa-times"></i></span>
+                    <span class="like-btn"><i class="fa fa-heart"></i></span>
+                </div>
+
+                <div class="image">
+                    <img src="res/cap-2-300x300.jpg" alt="">
+                </div>
+
+                <div class="description">
+                    <span>Classic Cap</span>
+                    <span>Yellow</span>
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-btn" id="plus" type="button" name="button">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <input id="input-qty" type="number" name="name" min="1" max="10" value="1">
+                    <button class="minus-btn" id="minus" type="button" name="button">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+
+                </div>
+
+                <div class="total-price">$16</div>
+            </div>
+
+            <!-- Product #2 -->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"><i class="fa fa-times"></i></span>
+                    <span class="like-btn"><i class="fa fa-heart"></i></span>
+                </div>
+
+                <div class="image">
+                    <img src="res/hoodie-with-logo-2-300x300.jpg" alt="">
+                </div>
+
+                <div class="description">
+                    <span>Hoodie with logo</span>
+                    <span>Blue</span>
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="total-price">$45</div>
+            </div>
+
+            <!-- Product #3 -->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"><i class="fa fa-times"></i></span>
+                    <span class="like-btn"><i class="fa fa-heart"></i></span>
+                </div>
+
+                <div class="image">
+                    <img src="res/vneck-tee-2-300x300.jpg" alt="">
+                </div>
+
+                <div class="description">
+                    <span>V-Neck T-shirt</span>
+                    <span>Red</span>
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" name="name" value="2">
+                    <button class="minus-btn" type="button" name="button">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="total-price">$24</div>
+            </div>
+
+            <!-- Product #4 -->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"><i class="fa fa-times"></i></span>
+                    <span class="like-btn"><i class="fa fa-heart"></i></span>
+                </div>
+
+                <div class="image">
+                    <img src="res/sunglasses-2-300x300.jpg" alt="">
+                </div>
+
+                <div class="description">
+                    <span>Sunglasses</span>
+                    <span>Black</span>
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="total-price">$90</div>
+            </div>
+
+            <!-- TOTALS -->
+            <div class="totals">
+                <h2>Total in cart</h2>
+                <div class="totals-item">
+                    <label>Subtotal</label>
+                    <div class="totals-value">$175.00</div>
+                </div>
+                <div class="totals-item">
+                    <label>Shipping costs</label>
+                    <div class="totals-value">Delivery options will be updated upon checkout.</div>
+                </div>
+                <div class="totals-item">
+                    <label>Discount</label>
+                    <div class="totals-value">-$0.00</div>
+                </div>
+                <div class="totals-item">
+                    <label><b>Estimated Total</b></label>
+                    <div class="totals-value"><b>$175.00</b></div>
+                </div>
+            </div>
+            <button class="checkout">Checkout</button>
+
+        </div>
+
+    </main> 
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&family=Roboto+Condensed">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <main>
+        <div class="shopping-cart-wrapper">
+            <table class="shopping-cart">
+                <thead>
+                    <tr>
+                        <th class="product-remove"></th>
+                        <th class="product-fave"></th>
+                        <th class="product-thumbnail"></th>
+                        <th class="product-name">Product</th>
+                        <th class="product-price">Price</th>
+                        <th class="product-quantity">Quantity</th>
+                        <th class="product-subtotal">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-item">
+                        <td class="product-remove"><a class="remove" href="">x</a></td>
+                        <th class="product-fave"><a class="fave" href=""><i class="fas fa-heart"></i></a></th>
+                        <td class="product-thumbnail">
+                            <img class="thumbnail" src="res/hoodie-with-logo-2-300x300.jpg" alt="hoodie with logo" loading="lazy">
+                        </td>
+                        <td class="product-name">Hoodie with logo</td>
+                        <td class="product-price">$45</td>
+                        <td class="product-quantity">
+                            <input class="cart-item-qty" type="number" min="1" value="1">
+                        </td>
+                        <th class="product-subtotal">$45</th>
+                    </tr>
+                    
+                    <tr class="cart-item">
+                        <td class="product-remove"><a class="remove" href="">x</a></td>
+                        <th class="product-fave"><a class="fave" href=""><i class="fas fa-heart"></i></a></th>
+                        <td class="product-thumbnail">
+                            <img class="thumbnail" src="res/vneck-tee-2-300x300.jpg" alt="V-Neck T-shirt" loading="lazy">
+                        </td>
+                        <td class="product-name">V-Neck T-shirt</td>
+                        <td class="product-price">$20</td>
+                        <td class="product-quantity">
+                            <input class="cart-item-qty" type="number" min="1" value="1">
+                        </td>
+                        <th class="product-subtotal">$20</th>
+                    </tr>
+
+                    <tr class="cart-item">
+                        <td class="product-remove"><a class="remove" href="">x</a></td>
+                        <th class="product-fave"><a class="fave" href=""><i class="fas fa-heart"></i></a></th>
+                        <td class="product-thumbnail">
+                            <img class="thumbnail" src="res/cap-2-300x300.jpg" alt="Yellow cap" loading="lazy">
+                        </td>
+                        <td class="product-name">Yellow cap</td>
+                        <td class="product-price">$16</td>
+                        <td class="product-quantity">
+                            <input class="cart-item-qty" type="number" min="1" value="1">
+                        </td>
+                        <th class="product-subtotal">$16</th>
+                    </tr>
+
+                    <tr class="cart-item">
+                        <td class="product-remove"><a class="remove" href="">x</a></td>
+                        <th class="product-fave"><a class="fave" href=""><i class="fas fa-heart"></i></a></th>
+                        <td class="product-thumbnail">
+                            <img class="thumbnail" src="res/sunglasses-2-300x300.jpg" alt="Sunglasses" loading="lazy">
+                        </td>
+                        <td class="product-name">Sunglasses</td>
+                        <td class="product-price">$75</td>
+                        <td class="product-quantity">
+                            <input class="cart-item-qty" type="number" min="1" value="1">
+                        </td>
+                        <th class="product-subtotal">$75</th>
+                    </tr>
+
+                    <tr>
+                        <td class="actions" colspan="7">
+                            <button class="button" type="submit" name="update_cart" value="Update Cart" disabled="">Update Cart</button>
+
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="totals">
+                <div class="totals-item">
+                    <label>Subtotal</label>
+                    <div class="totals-value">$156.00</div>
+                </div>
+                <div class="totals-item">
+                    <label>Shipping</label>
+                    <div class="totals-value">$15.00</div>
+                </div>
+                <div class="totals-item">
+                    <label><b>Total</b></label>
+                    <div class="totals-value"><b>$171.00</b></div>
+                </div>
+            </div>
+            <button class="checkout">Checkout</button>
+        </div>
+    </main> 
+</body>
+</html>
