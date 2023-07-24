@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="icon" type="image/x-icon" href="res/favicon.ico">
     <script src="js/main.js" async></script>
 </head>
 <body>
@@ -15,145 +16,107 @@
     </header>
     <main>
         <div class="shopping-cart">
-            <!-- Title -->
-            <div class="title">Items in your bag</div>
-
+            <!-- CART HEADER -->
+            <div class="item">
+                <span class="item-preview cart-header">PRODUCT</span>
+                <span class="description cart-header">DETAILS</span>
+                <span class="quantity cart-header">QUANTITY</span>
+                <span class="item-price cart-header">PRICE</span>
+            </div>
             <!-- Product #1-->
             <div class="item">
-                <div class="like-btn">
-                    <button><i class="fa fa-heart"></i></span></button>
+                <div class="item-preview">
+                    <span>
+                        <button class="btn btn-like" type="button"><i class="fa fa-heart"></i></button>
+                    </span>
+                    <span class="item-image">
+                        <img src="res/cap-2-300x300.jpg" alt="">
+                    </span>
                 </div>
-
-                <div class="image">
-                    <img src="res/cap-2-300x300.jpg" alt="">
-                </div>
-
                 <div class="description">
                     <span>Classic Cap</span>
                     <span>Yellow</span>
                 </div>
-
                 <div class="quantity">
-                    <button class="plus-btn" id="plus" type="button" name="button">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
-                    <input id="input-qty" type="number" name="name" min="1" max="10" value="1">
-                    <button class="minus-btn" id="minus" type="button" name="button">
-                        <i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
+                    <input class="quantity-input" type="number" value="1">
+                    <button class="btn btn-remove" type="button">REMOVE</button>
                 </div>
-
-                <div class="total-price">$16</div>
+                <div class="item-price">$16</div>
             </div>
 
             <!-- Product #2 -->
             <div class="item">
-                <div class="buttons">
-                    <span class="delete-btn"><i class="fa fa-times"></i></span>
-                    <span id="like-btn" onclick="toggleLike()"><i class="fa fa-heart"></i></span>
+                <div class="item-preview">
+                    <span class="btn-like-container">
+                        <button class="btn btn-like" type="button"><i class="fa fa-heart"></i></button>
+                    </span>
+                    <span class="item-image">
+                        <img src="res/hoodie-with-logo-2-300x300.jpg" alt="">
+                    </span>
                 </div>
-
-                <div class="image">
-                    <img src="res/hoodie-with-logo-2-300x300.jpg" alt="">
-                </div>
-
                 <div class="description">
                     <span>Hoodie with logo</span>
                     <span>Blue</span>
                 </div>
-
                 <div class="quantity">
-                    <button class="plus-btn" id="plus" type="button" name="button">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
-                    <input id="input-qty" type="number" name="name" min="1" max="10" value="1">
-                    <button class="minus-btn" id="minus" type="button" name="button">
-                        <i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
+                    <input class="quantity-input" type="number" value="1">
+                    <button class="btn btn-remove" type="button">REMOVE</button>
                 </div>
-
-                <div class="total-price">$45</div>
+                <div class="item-price">$45</div>
             </div>
 
             <!-- Product #3 -->
             <div class="item">
-                <div class="buttons">
-                    <span class="delete-btn"><i class="fa fa-times"></i></span>
-                    <span id="like-btn" onclick="toggleLike()"><i class="fa fa-heart"></i></span>
+                <div class="item-preview">
+                    <span>
+                        <button class="btn btn-like" type="button"><i class="fa fa-heart"></i></button>
+                    </span>
+                    <span class="item-image">
+                        <img src="res/vneck-tee-2-300x300.jpg" alt="">
+                    </span>
                 </div>
-
-                <div class="image">
-                    <img src="res/vneck-tee-2-300x300.jpg" alt="">
-                </div>
-
                 <div class="description">
                     <span>V-Neck T-shirt</span>
                     <span>Red</span>
                 </div>
-
                 <div class="quantity">
-                    <button class="plus-btn" id="plus" type="button" name="button">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
-                    <input id="input-qty" type="number" name="name" min="1" max="10" value="1">
-                    <button class="minus-btn" id="minus" type="button" name="button">
-                        <i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
+                    <input class="quantity-input" type="number" value="1">
+                    <button class="btn btn-remove" type="button">REMOVE</button>
                 </div>
-
-                <div class="total-price">$24</div>
+                <div class="item-price">$24</div>
             </div>
+
 
             <!-- Product #4 -->
             <div class="item">
-                <div class="buttons">
-                    <span class="delete-btn"><i class="fa fa-times"></i></span>
-                    <span id="like-btn" onclick="toggleLike()"><i class="fa fa-heart"></i></span>
+                <div class="item-preview">
+                    <span>
+                        <button class="btn btn-like" type="button"><i class="fa fa-heart"></i></button>
+                    </span>
+                    <span class="item-image">
+                        <img src="res/sunglasses-2-300x300.jpg" alt="">
+                    </span>
                 </div>
-
-                <div class="image">
-                    <img src="res/sunglasses-2-300x300.jpg" alt="">
-                </div>
-
                 <div class="description">
                     <span>Sunglasses</span>
                     <span>Black</span>
                 </div>
-
                 <div class="quantity">
-                    <button class="plus-btn" id="plus" type="button" name="button">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
-                    <input id="input-qty" type="number" name="name" min="1" max="10" value="1">
-                    <button class="minus-btn" id="minus" type="button" name="button">
-                        <i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
+                    <input class="quantity-input" type="number" value="1">
+                    <button class="btn btn-remove" type="button">REMOVE</button>
                 </div>
-
-                <div class="total-price">$90</div>
+                <div class="item-price">$90</div>
             </div>
 
             <!-- TOTALS -->
-            <div class="totals">
-                <h2>Total in cart</h2>
-                <div class="totals-item">
-                    <label>Subtotal</label>
-                    <div class="totals-value">$175.00</div>
-                </div>
-                <div class="totals-item">
-                    <label>Shipping costs</label>
-                    <div class="totals-value">Delivery options will be updated upon checkout.</div>
-                </div>
-                <div class="totals-item">
-                    <label>Discount</label>
-                    <div class="totals-value">-$0.00</div>
-                </div>
-                <div class="totals-item">
-                    <label><b>Estimated Total</b></label>
-                    <div class="totals-value"><b>$175.00</b></div>
-                </div>
+            <div class="cart-total">
+                <span class="cart-total-title">Total</span>
+                <span class="cart-total-price">$175.00</span>
             </div>
-            <button class="checkout">Checkout</button>
+            <div>
+                <button class="btn btn-checkout" type="button">CHECKOUT</button>
+            </div>
+            
 
         </div>
 
